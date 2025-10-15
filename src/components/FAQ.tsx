@@ -9,7 +9,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Vocês vendem fontes alugadas?",
-      answer: "Não recomendamos. Nossa especialidade é fornecer sistemas PRÓPRIOS para que você tenha controle total. No entanto, oferecemos o Plano Comum (R$ 1.300) que inclui fonte alugada para quem quer começar rapidamente."
+      answer: "Sim! Oferecemos planos de fonte alugada a partir de R$ 250 mensais com 50 conexões. Nossa especialidade é fornecer sistemas PRÓPRIOS, mas também temos opções de fontes alugadas para quem quer começar rapidamente."
     },
     {
       question: "A estabilidade é garantida?",
@@ -45,7 +45,7 @@ const FAQ = () => {
     },
     {
       question: "Como funciona o pagamento?",
-      answer: "Aceitamos Pix, transferência bancária e boleto. Para projetos acima de R$ 2.000, podemos parcelar em até 2x sem juros via transferência."
+      answer: "Aceitamos Pix à vista ou cartão de crédito parcelado em até 12x. Entre em contato para mais detalhes sobre as condições."
     }
   ];
 

@@ -79,7 +79,7 @@ const ServerPlans = () => {
                 }`}
                 asChild
               >
-                <a href="#contato">Contratar {plan.name}</a>
+                <a href={`https://wa.me/5544991082160?text=Olá!%20Gostaria%20de%20contratar%20o%20${encodeURIComponent(plan.name)}%20por%20${encodeURIComponent(plan.price)}`} target="_blank" rel="noopener noreferrer">Contratar {plan.name}</a>
               </Button>
             </Card>
           ))}

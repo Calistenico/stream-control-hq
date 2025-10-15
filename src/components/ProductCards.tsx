@@ -23,7 +23,7 @@ const ProductCards = () => {
         "Atualizações automáticas"
       ],
       cta: "Comprar DRM OTT V4",
-      link: "#contato"
+      link: "https://wa.me/5544991082160?text=Olá!%20Gostaria%20de%20comprar%20o%20DRM%20OTT%20V4%20por%20R$%201.800"
     },
     {
       id: "sistema-vod",
@@ -41,7 +41,7 @@ const ProductCards = () => {
         "Integração TMDB"
       ],
       cta: "Comprar Sistema VOD",
-      link: "#contato"
+      link: "https://wa.me/5544991082160?text=Olá!%20Gostaria%20de%20comprar%20o%20Sistema%20VOD%20por%20R$%201.100"
     },
     {
       id: "combo",
@@ -59,7 +59,7 @@ const ProductCards = () => {
         "Economia de R$ 400"
       ],
       cta: "Adquirir Combo Patrão",
-      link: "#contato",
+      link: "https://wa.me/5544991082160?text=Olá!%20Gostaria%20de%20adquirir%20o%20Combo%20Patrão%20por%20R$%202.500",
       highlighted: true
     }
   ];
@@ -126,7 +126,7 @@ const ProductCards = () => {
                   }`}
                   asChild
                 >
-                  <a href={product.link}>{product.cta}</a>
+                  <a href={product.link} target="_blank" rel="noopener noreferrer">{product.cta}</a>
                 </Button>
               </div>
             </Card>

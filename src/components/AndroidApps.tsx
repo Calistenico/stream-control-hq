@@ -124,7 +124,7 @@ const AndroidApps = () => {
                 }`}
                 asChild
               >
-                <a href="#contato">Solicitar Orçamento</a>
+                <a href={`https://wa.me/5544991082160?text=Olá!%20Gostaria%20de%20comprar%20o%20${encodeURIComponent(app.name)}%20por%20${encodeURIComponent(app.price)}`} target="_blank" rel="noopener noreferrer">Comprar App</a>
               </Button>
             </Card>
           ))}
