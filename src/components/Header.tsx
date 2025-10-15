@@ -6,12 +6,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
+    { label: "Início", href: "#" },
     { label: "Produtos", href: "#produtos" },
-    { label: "Planos", href: "#planos" },
-    { label: "Apps", href: "#apps" },
-    { label: "Combo", href: "#combo" },
-    { label: "Cases", href: "#cases" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Combo Patrão", href: "#combo" },
+    { label: "Montagem de Servidor", href: "#planos" },
+    { label: "Apps Android", href: "#apps" },
+    { label: "Contato", href: "#contato" },
   ];
 
   return (
@@ -43,7 +43,7 @@ const Header = () => {
               className="bg-primary hover:bg-primary/90 text-white font-semibold"
               asChild
             >
-              <a href="https://wa.me/5544991082160" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5544991082160?text=Olá!%20Vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20os%20sistemas%20IPTV." target="_blank" rel="noopener noreferrer">
                 Fale no WhatsApp
               </a>
             </Button>
@@ -76,7 +76,7 @@ const Header = () => {
               className="w-full bg-primary hover:bg-primary/90 text-white font-semibold"
               asChild
             >
-              <a href="https://wa.me/5544991082160" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5544991082160?text=Olá!%20Vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20os%20sistemas%20IPTV." target="_blank" rel="noopener noreferrer">
                 Fale no WhatsApp
               </a>
             </Button>

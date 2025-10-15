@@ -11,12 +11,12 @@ const Hero = () => {
           </Badge>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-            Soluções completas para donos de{" "}
-            <span className="gradient-text">servidor IPTV</span>
+            Assuma o controle do seu negócio de{" "}
+            <span className="gradient-text">streaming</span> — estabilidade e lucro com sistemas próprios
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Estáveis, próprias e lucrativas. DRM OTT V4, Sistema de VOD e planos de servidor prontos para você assumir o controle.
+            Oferecemos soluções completas para donos de servidores IPTV: DRM OTT V4, Sistema de VOD, Combo Patrão e montagem de servidores prontos.
           </p>
 
           {/* Pricing Bar */}
@@ -43,7 +43,9 @@ const Hero = () => {
               className="bg-primary hover:bg-primary/90 text-white font-bold text-lg h-14 px-8"
               asChild
             >
-              <a href="#combo">Comprar Combo Patrão — R$ 2.500</a>
+              <a href="https://wa.me/5544991082160?text=Olá!%20Tenho%20interesse%20no%20DRM%20OTT%20V4%20(R$1.800)." target="_blank" rel="noopener noreferrer">
+                Comprar DRM OTT V4 — R$ 1.800
+              </a>
             </Button>
             <Button 
               size="lg" 
@@ -51,8 +53,17 @@ const Hero = () => {
               className="border-primary text-primary hover:bg-primary/10 font-bold text-lg h-14 px-8"
               asChild
             >
-              <a href="https://wa.me/5544991082160" target="_blank" rel="noopener noreferrer">
-                Falar com Especialista
+              <a href="https://wa.me/5544991082160?text=Olá!%20Tenho%20interesse%20no%20Sistema%20de%20VOD%20(R$1.100)." target="_blank" rel="noopener noreferrer">
+                Comprar Sistema VOD — R$ 1.100
+              </a>
+            </Button>
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-bold text-lg h-14 px-8"
+              asChild
+            >
+              <a href="https://wa.me/5544991082160?text=Olá!%20Quero%20o%20Combo%20Patrão%20(DRM%20OTT%20V4%20+%20VOD%20+%20Instalação%20e%20Suporte)." target="_blank" rel="noopener noreferrer">
+                Comprar Combo Patrão — R$ 2.500
               </a>
             </Button>
           </div>

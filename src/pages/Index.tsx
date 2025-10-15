@@ -8,6 +8,7 @@ import AndroidApps from "@/components/AndroidApps";
 import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
+import CTAFinal from "@/components/CTAFinal";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 
@@ -26,6 +27,7 @@ const Index = () => {
         <Features />
         <Testimonials />
         <FAQ />
+        <CTAFinal />
       </main>
       <Footer />
       <FloatingActions />

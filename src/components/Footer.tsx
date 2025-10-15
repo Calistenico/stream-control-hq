@@ -1,17 +1,4 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
-import { useState } from "react";
-
 const Footer = () => {
-  const [email, setEmail] = useState("");
-
-  const handleNewsletter = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Obrigado por se inscrever! Você receberá nossas novidades.");
-    setEmail("");
-  };
-
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
@@ -53,25 +40,29 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Contato */}
           <div>
-            <h4 className="font-bold mb-4">Newsletter</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              Receba novidades e ofertas exclusivas
-            </p>
-            <form onSubmit={handleNewsletter} className="space-y-2">
-              <Input
-                type="email"
-                placeholder="Seu e-mail"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="bg-background"
-              />
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-                Inscrever
-              </Button>
-            </form>
+            <h4 className="font-bold mb-4">Contato</h4>
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2">
+                <span className="text-primary">📱</span>
+                <a href="https://wa.me/5544991082160" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  +55 44 99108-2160
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-primary">📧</span>
+                <a href="mailto:contato@vyntrixhost.com" className="hover:text-primary transition-colors">
+                  contato@vyntrixhost.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-primary">📸</span>
+                <a href="https://instagram.com/vyntrixsistemas" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  @vyntrixsistemas
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
