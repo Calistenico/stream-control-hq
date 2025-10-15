@@ -104,28 +104,30 @@ const AndroidApps = () => {
                 ))}
               </ul>
 
-              {app.link && (
+              <div className="space-y-3">
+                {app.link && (
+                  <Button
+                    variant="outline"
+                    className="w-full border-primary text-primary hover:bg-primary/10"
+                    asChild
+                  >
+                    <a href={app.link} target="_blank" rel="noopener noreferrer">
+                      Ver Demo
+                    </a>
+                  </Button>
+                )}
+
                 <Button
-                  variant="outline"
-                  className="w-full border-primary text-primary hover:bg-primary/10"
+                  className={`w-full font-semibold ${
+                    app.highlighted
+                      ? 'bg-primary hover:bg-primary/90 text-white'
+                      : 'bg-muted hover:bg-muted/80'
+                  }`}
                   asChild
                 >
-                  <a href={app.link} target="_blank" rel="noopener noreferrer">
-                    Ver Demo
-                  </a>
+                  <a href={`https://wa.me/5544991082160?text=Olá!%20Gostaria%20de%20comprar%20o%20${encodeURIComponent(app.name)}%20por%20${encodeURIComponent(app.price)}`} target="_blank" rel="noopener noreferrer">Comprar App</a>
                 </Button>
-              )}
-
-              <Button
-                className={`w-full font-semibold ${
-                  app.highlighted
-                    ? 'bg-primary hover:bg-primary/90 text-white'
-                    : 'bg-muted hover:bg-muted/80'
-                }`}
-                asChild
-              >
-                <a href={`https://wa.me/5544991082160?text=Olá!%20Gostaria%20de%20comprar%20o%20${encodeURIComponent(app.name)}%20por%20${encodeURIComponent(app.price)}`} target="_blank" rel="noopener noreferrer">Comprar App</a>
-              </Button>
+              </div>
             </Card>
           ))}
         </div>
